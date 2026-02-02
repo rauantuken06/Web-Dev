@@ -170,7 +170,7 @@ button {
 }
 
 .footer-inner {
-    width: 980px;
+    width: 1280px;
     margin: 0 auto;
     padding: 20px 10px;
     font-size: 12px;
@@ -181,10 +181,16 @@ footer a {
     text-decoration: none;
     color: #737373;
     margin-right: 12px;
+    margin-bottom: 17px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .footer-bottom {
     text-align: center;
+    height: 70px;
 }
 
 .lol1 {
