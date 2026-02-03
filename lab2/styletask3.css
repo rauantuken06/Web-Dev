@@ -67,7 +67,37 @@ h1.greeting {
     transition: 0.3s ease;
 }
 
+.recommended-wrapper {
+    position: relative;
+    background: #1f6feb;
+    padding:8px;
+    padding-bottom: 50px;
+    border-radius: 18px;
+    width: 340px;
+}
+
+.recommended-badge {
+    padding-bottom: 13px;
+    color: white;
+}
+
+.card1 {
+    background: #ffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(27, 31, 36, 0.5);
+    transition: 0.3s ease;
+}
+
 .card:hover {
+    transform: scale(1.03);
+}
+
+.card1:hover {
     transform: scale(1.03);
 }
 
