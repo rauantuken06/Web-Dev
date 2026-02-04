@@ -46,6 +46,11 @@ h1.greeting {
     text-decoration: none;
     font-weight: 600;
     margin-bottom: 44px;
+    transition: 0.3s ease;
+}
+
+.free_button:hover {
+    background: #e3831d;
 }
 
 .plans {
@@ -160,6 +165,7 @@ h1.greeting {
     background: linear-gradient(rgb(61, 61, 61), black);
     color:white;
     margin-bottom: 44px;
+    cursor:pointer
 }
 
 .white-button {
@@ -173,6 +179,7 @@ h1.greeting {
     color: black;
     margin-bottom: 44px;
     border: 1.1px solid rgb(217, 216, 216);
+    cursor:pointer
 }
 
 details {
