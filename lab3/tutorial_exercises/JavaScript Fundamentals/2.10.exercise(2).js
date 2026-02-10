@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<body>
-  <script>
-    'use strict';
+'use strict';
 
     let value = prompt("Enter a digit");
 
@@ -14,9 +9,3 @@
     } else {
         alert(-1);
     }
-  </script>
-
-
-</body>
-
-</html>
