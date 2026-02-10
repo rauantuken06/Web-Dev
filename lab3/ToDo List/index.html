@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo list</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="topbar">
+            <div class="topbar-inner">ToDo List</div>
+        </header>
+
+        <main class="page">
+            <section class="card">
+                <h1 class="title">ToDo List</h1>
+
+                <div class="add-row">
+                    <input id="taskInput" class="task-input" type="text", placeholder="New Task" />
+                    <button id="addBtn" class="btn btn-primary">Add</button>
+                </div>
+
+                <ul id="taskList" class="task-list">
+                    <!-- tasks will be created by JavaScript-->
+                </ul>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
