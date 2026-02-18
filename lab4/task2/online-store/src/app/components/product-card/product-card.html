@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="gallery">
+        <button type="button" class="nav left" (click)="prev()">‹</button>
+
+        <a [href]="product.link" target="_blank" rel="noopener" class="main">
+            <img [src]="activeImage" [alt]="product.name">
+        </a>
+
+        <button type="button" class="nav right" (click)="next()">›</button>
+    </div>
+
+    <div class="thumbs" *ngIf="product.images?.length">
+        <button
+            type="button"
+            class="thumb"
+            *ngFor="let img of product.images; let i = index"
+            (click)="selectImage(i)"
+            [class.active]="i === activeIndex"
+            aria-label="Select image"
+        >
+            <img [src]="img" alt="">
+        </button>
+    </div>
+
+    
+
+    <h3 class="title">{{ product.name }}</h3>
+    <p class="desc">{{ product.description }}</p>
+
+    <div class="meta">
+        <span class="price">{{ product.price | number }} Tg</span>
+        <span class="rating">
+            ⭐ {{ product.rating }}
+        </span>
+    </div>
+
+    <div class="actions">
+        <a class="kaspi" [href]="product.link" target="_blank" rel="noopener">Open on Kaspi</a>
+
+        <button type="button" (click)="shareToWhatsApp()">WhatsApp</button>
+        <button type="button" (click)="shareToTelegram()">Telegram</button>
+    </div>
+</div>

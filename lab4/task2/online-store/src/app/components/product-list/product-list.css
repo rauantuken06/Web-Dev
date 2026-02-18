@@ -1,0 +1,15 @@
+.page-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    padding: 0 20px 30px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
