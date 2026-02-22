@@ -1,117 +1,153 @@
 .card {
-    border: 1px solid #e6e6e6;
-    border-radius: 14px;
-    padding: 12px;
-    background: #fff;
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #e7e7e7;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+    transition: transform 160ms ease, box-shadow 160ms ease;
+    padding: 20px 20px 10px 20px;
+    height: 630px;
 }
 
-.image-wrap img{
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.10);
+}
+
+.image img {
     width: 100%;
-    height: 170px;
+    height: 220px;
     object-fit: contain;
-    margin-bottom: 15px;
+    background: #fafafa;
+    display: block;
+}
+
+.thumbs {
+    display: flex;
+    gap: 8px;
+    padding: 10px 12px;
+    overflow-x: auto;
+}
+
+.thumb {
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2px;
+    cursor: pointer;
+    min-width: 54px;
+}
+
+.thumb img {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    display: block;
+}
+
+.thumb.active {
+    border-color: #111;
+}
+
+.content {
+    padding: 12px 14px 14px;
+    display: grid;
+    gap: 10px;
 }
 
 .title {
     font-size: 16px;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title a {
+    color: #111;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: auto;
 }
 
 .desc {
-    color: #555;
+    margin: 0;
+    color: #444;
     font-size: 13px;
-    line-height: 1.4;
+    line-height: 1.35;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .meta {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 10px;
+    font-size: 18px;
 }
 
 .price {
     font-weight: 700;
 }
 
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge {
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #fff;
+}
+
+.stars .star {
+    opacity: 0.25;
+    font-size: 17px;
+}
+
+.stars .star.filled {
+    opacity: 1;
+}
+
 .actions {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.actions a, 
-.actions button {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 8px 10px;
-    background: #f7f7f7;
-    cursor:pointer;
-    text-decoration: none;
-    color: #111;
-    font-size: 13px;
-}
-
-.gallery {
-    position: relative;
-    border: 2px solid #4aa3ff;
-    border-radius: 14px;
-    overflow: hidden;
-    background: #f7fbff;
-}
-
-.main img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    display: block;
-}
-
-.nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    width: 34px;
-    height: 34px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.85);
-    cursor: pointer;
-    font-size: 22px;
-    line-height: 34px;
-}
-
-.nav.left {left: 8px;}
-.nav.right {right: 8px;}
-
-.thumbs {
-    display: flex;
     gap: 8px;
-    margin-top: 10px;
-    overflow-x: auto;
-    padding-bottom: 2px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
-.thumb {
-    border: 2px solid transparent;
-    border-radius: 10px;
-    padding: 2px;
-    background: transparent;
+.actions button, .actions .kaspi {
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 12px;
     cursor: pointer;
-    flex: 0 0 auto;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: monospace;
 }
 
-.thumb img {
-    width: 54px;
-    height: 54px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
+.actions button:hover, .actions .kaspi:hover {
+    border-color: #111;
+    transform: translateX(+3px);
 }
 
-.thumb.active {
-    border-color: #4aa3ff;
+.actions .WhatsApp {
+    background-color: rgb(10, 150, 10);
+    color: white;
+}
+
+.actions .Telegram {
+    background-color: rgb(107, 107, 250);
+    color: white;
+}
+
+.actions .kaspi {
+    background-color: red;
+    color: white;
 }

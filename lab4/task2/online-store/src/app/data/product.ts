@@ -6,7 +6,7 @@ export const PRODUCTS: Product[] = [
         name: 'Palit RTX 5060 Ti INFINITY 3 16GB',
         description: 'Погрузитесь в мир высоких технологий с Palit RTX 5060 Ti INFINITY 3 16GB — видеокартой, которая обеспечит вам невероятную производительность и высокое качество графики для игр и профессиональных приложений.',
         price: 337000,
-        rating: 5,
+        rating: 4.9,
         image: 'https://resources.cdn-kaspi.kz/img/m/p/pf2/p0b/37066117.jpg?format=gallery-large',
         images: [ 'https://resources.cdn-kaspi.kz/img/m/p/pf2/p0b/37066117.jpg?format=gallery-large',
                 'https://resources.cdn-kaspi.kz/img/m/p/pd6/p0b/37066118.jpg?format=gallery-large',
@@ -19,7 +19,7 @@ export const PRODUCTS: Product[] = [
         name: 'Смарт-часы Apple Watch SE GPS Gen.2 2024 S/M 40 мм бежевый',
         description: 'Полны достоинств. Корпус в трёх стильных цветах. Мощные датчики для информации о вашем здоровье и активности. Инновационные функции безопасности.',
         price: 129520,
-        rating: 5,
+        rating: 4.7,
         image: 'https://resources.cdn-kaspi.kz/img/m/p/p55/p9b/5542335.png?format=gallery-large',
         images: ['https://resources.cdn-kaspi.kz/img/m/p/p55/p9b/5542335.png?format=gallery-large',
                 'https://resources.cdn-kaspi.kz/img/m/p/pe4/p9a/5542339.png?format=gallery-large',
@@ -29,23 +29,23 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: 3,
-        name: 'Креатин YummyLab Creatine monohydrate нейтральный 300 г',
-        description: 'Creatine Monohydrate – 100%-й моногидрат креатина в порошковой форме. Моногидрат креатина характеризуется максимальным содержанием действующего вещества, является самой распространенной формой креатина.',
-        price: 6374,
+        name: 'Смартфон Samsung Galaxy S25 Ultra 5G 12 ГБ/256 ГБ темно-черный',
+        description: 'Samsung Galaxy S25 Ultra 5G — флагманский смартфон с непревзойденными возможностями для тех, кто требует от устройства максимальной производительности и качества.',
+        price: 57990,
         rating: 5,
-        image: 'https://resources.cdn-kaspi.kz/img/m/p/p57/p04/86602276.jpeg?format=gallery-large',
-        images: ['https://resources.cdn-kaspi.kz/img/m/p/pfc/p0c/86475803.png?format=gallery-large',
-                'https://resources.cdn-kaspi.kz/img/m/p/pc3/p0c/86475805.png?format=gallery-large',
-                'https://resources.cdn-kaspi.kz/img/m/p/pa7/p0c/86475806.png?format=gallery-large'
+        image: 'https://resources.cdn-kaspi.kz/img/m/p/pa8/pcf/20117665.png?format=gallery-large',
+        images: ['https://resources.cdn-kaspi.kz/img/m/p/pa8/pcf/20117665.png?format=gallery-large',
+                'https://resources.cdn-kaspi.kz/img/m/p/pc4/pcf/20117666.png?format=gallery-large',
+                'https://resources.cdn-kaspi.kz/img/m/p/pe0/pcf/20117667.png?format=gallery-large'
         ],
-        link: 'https://kaspi.kz/shop/p/kreatin-yummylab-creatine-monohydrate-neitral-nyi-300-g-117779595/?c=750000000'
+        link: 'https://kaspi.kz/shop/p/samsung-galaxy-s25-ultra-5g-12-gb-256-gb-temno-chernyi-133434571/?c=750000000'
     },
     {
         id: 4,
         name: 'Наушники Apple USB-C MYQY3ZM/A белый',
         description: 'Наушники Apple USB-C MYQY3ZM/A — это удобное и практичное решение для тех, кто предпочитает классический дизайн и надёжное качество звука.',
         price: 10500,
-        rating: 5,
+        rating: 4.7,
         image: 'https://resources.cdn-kaspi.kz/img/m/p/pa1/pc8/41468726.jpg?format=gallery-large',
         images: ['https://resources.cdn-kaspi.kz/img/m/p/pa1/pc8/41468726.jpg?format=gallery-large',
                 'https://resources.cdn-kaspi.kz/img/m/p/pf5/pc8/41468729.jpg?format=gallery-large',
@@ -54,7 +54,7 @@ export const PRODUCTS: Product[] = [
         link: 'https://kaspi.kz/shop/p/naushniki-apple-usb-c-myqy3zm-a-belyi-139440255/?c=750000000'
     },
     {
-        id: 5,
+        id: 4.1,
         name: 'Книга Спаркс Н.: Дневник памяти',
         description: 'Замечательная книга и не менее замечательная история любви. Купите эту книгу и откройте новую главу художественной литературы !',
         price: 3400,
@@ -88,7 +88,7 @@ export const PRODUCTS: Product[] = [
         image: 'https://resources.cdn-kaspi.kz/img/m/p/pb4/pd0/83083485.png?format=gallery-large',
         images: ['https://resources.cdn-kaspi.kz/img/m/p/p50/p3f/72662073.bin?format=gallery-large',
                 'https://resources.cdn-kaspi.kz/img/m/p/ha2/h45/86503356858398.jpg?format=gallery-large',
-                'https://kaspi.kz/shop/p/raspashnoi-shkaf-qazyna-jihaz-ul-tra-80x190h45-sm-belyi-korichnevyi-108794828/?c=750000000'
+                'https://resources.cdn-kaspi.kz/img/m/p/h0c/h2c/86503357055006.jpg?format=gallery-large'
         ],
         link: 'https://kaspi.kz/shop/p/raspashnoi-shkaf-qazyna-jihaz-ul-tra-80x190h45-sm-belyi-korichnevyi-108794828/?c=750000000'
     },
